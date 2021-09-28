@@ -1,0 +1,21 @@
+#!/bin/bash
+# Main script to make ZWI file.
+# S.Chekanov
+
+# change to anything
+# URL="https://factseek.org/r/wikipedia.php?q=Color_charge"
+URL=$1
+
+# do not modify
+IN=${URL}
+arrIN=(${IN/.php?q=/ })
+ztitle=${arrIN[1]}
+IN=${arrIN[0]}
+arrIN=(${IN//// })
+zsource=${arrIN[3]}
+echo "Title=$ztitle from $zsource"
+echo "Download cached file from $URL"
+
+python3 getfactseek.py $URL
+echo "Process and make ${ztitle}.zwi"
+python3 process_zwi.py -i ${ztitle}.html.gz -q -s $zsource -t $ztitle -o ${ztitle}.zwi 
