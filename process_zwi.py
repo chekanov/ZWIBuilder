@@ -19,13 +19,11 @@ import tempfile
 
 dirpath = tempfile.mkdtemp()
 
-
 stime=str(int(time()))
 print("Time=",stime)
 print("TMP dir=",dirpath)
 
-
-#### start program ####
+#### input parameters ####
 kwargs = {}
 parser = argparse.ArgumentParser()
 parser.add_argument('-q', '--quiet', action='store_true', help="don't show verbose")
@@ -188,11 +186,6 @@ def extractCSS(soup):
     return count 
 
 
-
-
-
-
-
 # MAIN FUNCTION START
 def main(html):
    
@@ -203,7 +196,7 @@ def main(html):
     soup = BeautifulSoup(html, 'html.parser')
 
     # nicely looking
-    html = soup.prettify()   #prettify the html
+    # html = soup.prettify()   #prettify the html
 
     # find all images in URL
     images = soup.findAll('img')
@@ -240,10 +233,9 @@ def main(html):
     #htmltit=htmltit.replace(".html.gz","")
     #htmltit=htmltit.replace(".html","")
     metadata = {"ZWIversion":"1","Title":args.title, "CreatorName":args.title,"Primary":"article.html","LastModified":stime}
-    z.writestr("metadata.js", json.dumps(metadata))
-    z.writestr("media.js", json.dumps(xmedia))
+    z.writestr("metadata.json", json.dumps(metadata))
+    z.writestr("media.json", json.dumps(xmedia))
     z.close()
-
 
     print("Cleared =",dirpath)    
     cmd="rm -rf "+dirpath
@@ -261,7 +253,7 @@ try:
                 elif index.endswith('.html.gz'):
                   ret =  gzip.open(index, 'rt',encoding='utf-8').read()
 
-                # prepare file (Chekanov)
+                # prepare file  header and footer
                 data_head=open('html_header.html', 'r', encoding='utf-8').read();
                 data_footer=open('html_footer.html', 'r', encoding='utf-8').read();
                 HTML=data_head+ret+data_footer;
