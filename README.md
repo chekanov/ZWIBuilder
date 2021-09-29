@@ -21,7 +21,7 @@ https://factseek.org/r/wikipedia.php?q=Quark
 Then, make the ZWI file as:
 
 ````
-ARUN https://factseek.org/r/wikipedia.php?q=Quark
+ARUN "https://factseek.org/r/wikipedia.php?q=Quark"
 ````
 
 This will create Quark.zwi.  The program also attemots to view it in firefox.
