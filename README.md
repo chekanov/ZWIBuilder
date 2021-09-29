@@ -19,5 +19,5 @@ Then, make the ZWI file as:
 
 ARUN https://factseek.org/r/wikipedia.php?q=Quark
 
-The program is in progress.
+The program is in progress for the KSF foundation.
 
