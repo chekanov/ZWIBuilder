@@ -16,7 +16,6 @@ where URL points to factseek.org document. Note that this can only work if you r
 
 ````
 https://factseek.org/r/wikipedia.php?q=Quark
-
 ````
 
 Then, make the ZWI file as:
