@@ -3,16 +3,16 @@ Builder of ZWI files (https://handwiki.org/wiki/ZWI_file_format) using external 
 
 Here are the steps to create a ZWI file:
 
-(1) First, perfom search using factseek.org and find sime article from WP. View it. This step prepares the article, checks internal links and create well-formatted document structure on factseek.org. It also creates verious cached images for equaitions etc. on the external source like WP) 
+(1) First, perfom search using factseek.org and find some article from WP. LOok at this article. This step prepares the article, checks internal links and create well-formatted document structure on factseek.org. It also creates verious cached images for equaitions etc. on the external source. 
 
-(2) Run this program as this:
+(2) Run this program as:
 
 ````
 chmod 755 ARUN
-ARUN [URL]
+./ARUN [URL]
 ````
 
-where URL points to factseek.org document. Note that this can only work if you run this program within about 1 h of viewing, since cached images may desapeare on the external source. For example, view this article first:
+where URL points to the factseek.org document. Note that this can only work if you run this program within about 1 h of viewing, since cached images may be removed  on the external source. For example, view this article first:
 
 ````
 https://factseek.org/r/wikipedia.php?q=Quark
@@ -24,7 +24,9 @@ Then, make the ZWI file as:
 ARUN https://factseek.org/r/wikipedia.php?q=Quark
 ````
 
-The program is in progress for the KSF foundation. The program also attemots to view it in firefox.
+This will create Quark.zwi.  The program also attemots to view it in firefox.
+
+This program is in progress.
 
 S.C. (KSF)
 
