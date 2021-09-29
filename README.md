@@ -3,7 +3,7 @@ Builder of ZWI files (https://handwiki.org/wiki/ZWI_file_format) using external 
 
 Here are the steps to create a ZWI file:
 
-(1) First, perfom search using factseek.org and find some article from WP. LOok at this article. This step prepares the article, checks internal links and create well-formatted document structure on factseek.org. It also creates verious cached images for equaitions etc. on the external source. 
+(1) First, search for a word using factseek.org and find some article from WP. Look at this article. This step prepares the article's html, checks internal links and create well-formatted document structure on factseek.org. It also creates verious cached images for equaitions etc. on the external source. 
 
 (2) Run this program as:
 
@@ -12,7 +12,7 @@ chmod 755 ARUN
 ./ARUN [URL]
 ````
 
-where URL points to the factseek.org document. Note that this can only work if you run this program within about 1 h of viewing, since cached images may be removed  on the external source. For example, view this article first uisng a web browser:
+where URL points to the URL from factseek.org document. Note that this can only work if you run this program within about 1 h after viewing on factseek.org since cached images may be removed  on the external source. For example, view this article first uisng a web browser:
 
 ````
 https://factseek.org/r/wikipedia.php?q=Quark
