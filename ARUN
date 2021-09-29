@@ -19,3 +19,17 @@ echo "Download cached file from $URL"
 python3 getfactseek.py $URL
 echo "Process and make ${ztitle}.zwi"
 python3 process_zwi.py -i ${ztitle}.html.gz -q -s $zsource -t $ztitle -o ${ztitle}.zwi 
+
+read -p "Do you want to view ${ztitle}.zwi in firefox? " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+        DIR=`mktemp -d`
+        cp ${ztitle}.zwi $DIR/
+        cd $DIR
+        unzip ${ztitle}.zwi
+        firefox article.html
+        cd $PWD
+
+fi
+
