@@ -24,7 +24,7 @@ Then, make the ZWI file as:
 ARUN "https://factseek.org/r/wikipedia.php?q=Quark"
 ````
 
-This will create Quark.zwi.  The program also attemots to view it in firefox.
+This will create Quark.zwi.  The program also attems to view it in firefox (press "y" at the end).
 
 This program is in progress.
 
