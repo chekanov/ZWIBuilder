@@ -12,7 +12,7 @@ chmod 755 ARUN
 ./ARUN [URL]
 ````
 
-where URL points to the factseek.org document. Note that this can only work if you run this program within about 1 h of viewing, since cached images may be removed  on the external source. For example, view this article first:
+where URL points to the factseek.org document. Note that this can only work if you run this program within about 1 h of viewing, since cached images may be removed  on the external source. For example, view this article first uisng a web browser:
 
 ````
 https://factseek.org/r/wikipedia.php?q=Quark
