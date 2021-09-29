@@ -88,7 +88,6 @@ def download_images(images, folder_name):
     # print total images found in URL
     print(f"Total {len(images)} Image Found!")
 
-
     if len(images) == 0: return;
 
     allImages=[]
@@ -116,7 +115,6 @@ def download_images(images, folder_name):
                         # 4.src
                         # 5.srcset 
 
-
             #newname=os.path.basename(image_link)
             newname = image_link.split("/")[-1]
             filename=folder_name+"/"+newname
@@ -140,12 +138,10 @@ def download_images(images, folder_name):
             # remeber replacements
             imageReplacer[image_link]=xnames
 
-
             # Check if the image was retrieved successfully
             if r.status_code == 200:
               # Set decode_content value to True, file's size will be zero.
               r.raw.decode_content = True
-
              
               with open(filename,'wb') as f:
                       shutil.copyfileobj(r.raw, f)
@@ -159,7 +155,7 @@ def download_images(images, folder_name):
     return count
 
 
-#
+# extract CSS
 def extractCSS(soup):
     count=0
     for link in soup('link'):
@@ -243,6 +239,7 @@ def main(html):
     print("Created =",args.output)
  
 
+# get HTML
 HTML="";
 index=args.input
 
