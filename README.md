@@ -1,6 +1,5 @@
 # ZWIBuilder
-Builder of ZWI files using HTML for KSF. The goal if this program is to create a self-contained files with encyclopeci article. Currently, only works with WP.
-You need python3, bash and Linux. 
+Builder of ZWI files (https://handwiki.org/wiki/ZWI_file_format) using external HTML files. The goal if this program is to create self-contained files with encyclopedic articles. Currently, it only works with WP. You need python3, bash (which are typically available under Linux/Mac). 
 
 Here are the steps to create a ZWI file:
 
@@ -8,16 +7,25 @@ Here are the steps to create a ZWI file:
 
 (2) Run this program as this:
 
+````
 chmod 755 ARUN
 ARUN [URL]
+````
 
 where URL points to factseek.org document. Note that this can only work if you run this program within about 1 h of viewing, since cached images may desapeare on the external source. For example, view this article first:
 
+````
 https://factseek.org/r/wikipedia.php?q=Quark
+
+````
 
 Then, make the ZWI file as:
 
+````
 ARUN https://factseek.org/r/wikipedia.php?q=Quark
+````
 
-The program is in progress for the KSF foundation.
+The program is in progress for the KSF foundation. The program also attemots to view it in firefox.
+
+S.C. (KSF)
 
