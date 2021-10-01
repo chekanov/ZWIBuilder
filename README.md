@@ -28,13 +28,12 @@ chmod 755 ARUN
 ./ARUN [URL]  # [URL] that points to FactSeek article
 ````
 
-where URL points to the URL from factseek.org document. Note that this can only work if you run this program within about 1 h after viewing on factseek.org since cached images may be removed  on the external source. For example, view this article first uisng a web browser:
+where URL points to the URL from factseek.org document. Note that this can only work if you run this program within about 1 h after viewing on factseek.org since cached images may be removed  on the external source. For example, view this article first using a web browser:
 
 ````
 https://factseek.org/r/wikipedia.php?q=Quark
 ````
-
-Then, make the ZWI file as:
+By viewing it, factseek creates a small cache file that is suitable for further processing.  Then, make the ZWI file as:
 
 ````
 ARUN "https://factseek.org/r/wikipedia.php?q=Quark"
