@@ -48,11 +48,10 @@ unzip Quark.zwi
 firefox article.html
 
 ````
-Note that all iamges should be located in "data/media/images".
+According to ZWI specification, all images should be located in "data/media/images". Unlike the original ZWI files used in plugins, this ZWI file does not include Wikitext. meta.json tells that the primary source of the article is HTML (article.html), not article.wikitext. The latter can be added in future (or created from HTML), but this may not be necessary since the correct transformation between HTML and Wikitext can only be done by the original external encyclopedias.
 
 Note that the included "meta.json" file has a very basic structure. It is not used during article viewing. It will be used
 for external program to visualize this article. It can easily be extended by adding more metadat entries.
-
 
 This program is in progress.
 
