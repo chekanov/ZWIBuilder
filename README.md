@@ -22,8 +22,10 @@ Here are the steps to create a ZWI file using external encyclopediua:
 (2) Run this program as:
 
 ````
+git clone https://github.com/chekanov/ZWIBuilder.git
+cd ZWIBuilder
 chmod 755 ARUN
-./ARUN [URL]
+./ARUN [URL]  # [URL] that points to FactSeek article
 ````
 
 where URL points to the URL from factseek.org document. Note that this can only work if you run this program within about 1 h after viewing on factseek.org since cached images may be removed  on the external source. For example, view this article first uisng a web browser:
