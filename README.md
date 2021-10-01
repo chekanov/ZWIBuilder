@@ -9,11 +9,11 @@ Once such ZWI files are created, encyclopedia articles can be "detached" from th
 
 This ZWIBuilder is a program that creates ZWI files from  external HTML files, withoutdirect access to Wikitext. The goal of this program is to create self-contained files with encyclopedic articles with all media.  Currently, this program only works with WP. It needs to be validated for other encyclopedias. 
 
-#What do you need to run it
+# What do you need 
 
 You need Python3, Bash (which are typically available under Linux/Mac) and Beautiful Soup python library.
 
-#Testing this tool
+# Testing this tool
 
 Here are the steps to create a ZWI file using external encyclopediua:
 
